@@ -1,0 +1,22 @@
+.projects {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media(max-width:768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

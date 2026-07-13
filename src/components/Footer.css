@@ -1,0 +1,82 @@
+.footer {
+    background: var(--card-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding:50px 20px 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.footer p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-icons a{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+
+    color:var(--text-color);
+    font-size:24px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-icons a:hover{
+    background:var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    transform:translateY(-5px);
+}
+
+.copyright{
+    margin-top:25px;
+    font-size:14px;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .footer p {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .footer-icons {
+        gap: 18px;
+    }
+
+    .footer-icons a {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}

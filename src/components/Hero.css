@@ -1,0 +1,182 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 40px 80px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.hero span{
+    color: var(--accent-color);
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap:20px;
+}
+
+.hero-buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.primary-btn {
+    background: var(--accent-color);
+    color: black;
+    border: none;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 216, 255, .25);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.secondary-btn:hover {
+    background-color: #00d8ff;
+    color: #111;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+     box-shadow: 0 0 25px rgba(0, 216, 255, 0.2);
+    transition: transform .35s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Mobile (768px and below)
+=========================== */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 100px 20px 60px;
+        gap: 40px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 90px 15px 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 180px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,97 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: inherit;
+    color: inherit;
+    padding: 20px 40px;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Desktop menu */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Humberger icon (Hidden on desktop) */ 
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+} 
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background: var(--card-bg);
+        text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+    position: relative;
+}
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: rotate(25deg);
+}
