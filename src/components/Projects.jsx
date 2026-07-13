@@ -18,7 +18,7 @@ const projects = [
         "SQL Server"
       ],
       live: "#",
-      github: "#"
+      github: "https://github.com/Navas-github/navas-portfolio"
     },
 
     {
@@ -31,8 +31,8 @@ const projects = [
         "JavaScript",
         "CSS"
       ],
-      live: "#",
-      github: "#"
+      live: "https://navas-github.github.io/navas-portfolio/",
+      github: "https://github.com/Navas-github/navas-portfolio"
     }
   ];
 
