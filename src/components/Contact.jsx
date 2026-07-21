@@ -61,7 +61,7 @@ function Contact () {
          </div>
 
          <a
-           href="/My Resume.pdf"
+           href={`${import.meta.env.BASE_URL}Resume.pdf`}
            className="download-btn"
            download
          >

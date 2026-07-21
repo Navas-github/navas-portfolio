@@ -18,7 +18,7 @@ const projects = [
         "SQL Server"
       ],
       live: "#",
-      github: "https://github.com/Navas-github/navas-portfolio"
+      github: "https://github.com/Navas-github/Asset-Management-System.git"
     },
 
     {
