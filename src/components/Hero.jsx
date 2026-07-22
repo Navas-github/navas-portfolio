@@ -1,5 +1,6 @@
 import "./Hero.css";
-import profile from "../assets/images/profile.jpg";
+// import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/Nav.jpg";
 
 function Hero() {
   return (
@@ -13,7 +14,7 @@ function Hero() {
 
         <p>
           I build modern, responsive web applications using React,
-          ASP.NET Core, SQL Server, and JavaScript while creating
+          ASP.NET Core, SQL Server, and JavaScript while also creating
           engaging football content for social media.
         </p>
         <div className="hero-buttons">

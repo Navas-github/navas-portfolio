@@ -2,7 +2,8 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 
 import amsImage from "../assets/images/AMS.png";
-import portfolioImage from "../assets/images/portfolio.png";
+import portfolioImage from "../assets/images/Mineportfolio.png";
+import pmsImage from "../assets/images/Pms.png"
 
 function Projects () {
 
@@ -30,6 +31,20 @@ const projects = [
         "React",
         "JavaScript",
         "CSS"
+      ],
+      live: "https://navas-github.github.io/navas-portfolio/",
+      github: "https://github.com/Navas-github/navas-portfolio"
+    },
+
+    {
+      image: pmsImage,
+      title: "Project Management System",
+      description:
+        "Enterprise system for Management project activity, planning and status System with c#, asp.net. and Oracle",
+      technologies: [
+        "C#",
+        "Asp.net",
+        "Oracle"
       ],
       live: "https://navas-github.github.io/navas-portfolio/",
       github: "https://github.com/Navas-github/navas-portfolio"

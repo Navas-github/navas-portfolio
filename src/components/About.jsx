@@ -1,5 +1,6 @@
 import "./About.css";
-import profile from "../assets/images/profile.jpg";
+// import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/Nav.jpg";
 function About() {
  return (
  <section 
@@ -18,7 +19,7 @@ function About() {
 
         <p>
             I'm <strong>Navas</strong>, a passionate Full Stack Developer and content creator who
-            enjoys building modern, responsive, and user-friendly web applications while
+            enjoys building modern, responsive, and user-friendly web applications while also
             creating engaging digital content.
         </p>
 
@@ -30,9 +31,9 @@ function About() {
         </p>
 
         <p>
-            My goal is to continuously improve my technical and creative skills while
-            building high-quality applications and producing valuable content that
-            inspires and informs people.
+            My goal is to continuously grow as both a developer and content
+            creator by building high-quality application and creating valuable
+            content that informs, inspires, and engages people.
         </p>
 
         <div className="about-stats">
