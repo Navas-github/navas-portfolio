@@ -64,20 +64,6 @@ const projects = [
       ],
       live: "https://navas-github.github.io/navas-portfolio/",
       github: "https://github.com/Navas-github/navas-portfolio"
-    },
-
-    {
-      image: RentImage,
-      title: "Car & House Rental Platform",
-      description:
-        "A web application for listing, renting, buying and selling cars and house includes property and vehicle with .Net core and Sql database", 
-      technologies: [
-        "C#",
-        ".Net core",
-        "Sql"
-      ],
-      live: "http://myapp1.runasp.net/",
-      github: "https://github.com/Navas-github/navas-portfolio"
     }
   ];
 
