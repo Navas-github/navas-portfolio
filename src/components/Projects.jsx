@@ -3,7 +3,9 @@ import ProjectCard from "./ProjectCard";
 
 import amsImage from "../assets/images/AMS.png";
 import portfolioImage from "../assets/images/Mineportfolio.png";
-import pmsImage from "../assets/images/Pms.png"
+import pmsImage from "../assets/images/Pms.png";
+import rmsImage from "../assets/images/Rms.png"; 
+import RentImage from "../assets/images/Rent.png";
 
 function Projects () {
 
@@ -14,7 +16,7 @@ const projects = [
       description:
         "Enterprise system for managing asset registration, assignment, transfer and reporting.",
       technologies: [
-        "ASP.NET Core",
+        ".NET Core",
         "C#",
         "SQL Server"
       ],
@@ -47,6 +49,34 @@ const projects = [
         "Oracle"
       ],
       live: "https://navas-github.github.io/navas-portfolio/",
+      github: "https://github.com/Navas-github/navas-portfolio"
+    },
+
+    {
+      image: rmsImage,
+      title: "Registration Management System",
+      description:
+        "Enterprise system for Register new cadet, manage courses, and, calculate grade with c#, asp.net. and Sql",
+      technologies: [
+        "C#",
+        "Asp.net",
+        "Sql"
+      ],
+      live: "https://navas-github.github.io/navas-portfolio/",
+      github: "https://github.com/Navas-github/navas-portfolio"
+    },
+
+    {
+      image: RentImage,
+      title: "Car & House Rental Platform",
+      description:
+        "A web application for listing, renting, buying and selling cars and house includes property and vehicle with .Net core and Sql database", 
+      technologies: [
+        "C#",
+        ".Net core",
+        "Sql"
+      ],
+      live: "http://myapp1.runasp.net/",
       github: "https://github.com/Navas-github/navas-portfolio"
     }
   ];
